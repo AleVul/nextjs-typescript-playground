@@ -6,8 +6,7 @@ module.exports = withLess(
   withTypescript({
     lessLoaderOptions: {
       javascriptEnabled: true
-    }
+    },
+    pageExtensions: ["tsx"]
   })
 );
-
-console.log(path.join(__dirname, ".next"))

@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-import Foo from "../components/foo";
-import { PageContext } from "../interfaces";
+import Foo from "../src/components/foo";
 
 /** Home page props definitions. */
 export interface Props {
@@ -19,7 +18,7 @@ class HomePage extends React.PureComponent<Props, State> {
     this.state = { b: 1 };
   }
 
-  static async getInitialProps(ctx: PageContext): Promise<Props> {
+  static async getInitialProps(ctx: any): Promise<Props> {
     return Promise.resolve({ a: "bruh" });
   }
 
